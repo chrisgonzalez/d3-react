@@ -1,7 +1,7 @@
-React Slides
+D3 React
 =====================
 
-A simple presentation slide system build in ReactJS. This is not intended to be used as a production slide system just an education tool in learning ReactJS.
+A starting place for react + d3 experiments, featuring hot-reloading, auto browser refresh, and a centralized redux data store!
 
 ### Usage
 
@@ -22,6 +22,7 @@ open http://localhost:3000
 
 ### Dependencies
 
+* D3.js
 * React
 * Webpack
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
@@ -37,3 +38,5 @@ open http://localhost:3000
 * <a href="https://facebook.github.io/react/docs/component-specs.html">React Lifecycle Method Documentation</a>
 * <a href="https://facebook.github.io/react/docs/getting-started.html">Full Documentation</a>
 * <a href="https://github.com/gaearon/react-hot-boilerplate">React Hot Boilerplate</a>
+* <a href="https://github.com/mbostock/d3/wiki/Gallery">D3 Examples</a>
+* <a href="https://github.com/mbostock/d3/wiki/API-Reference">D3 API</a>
