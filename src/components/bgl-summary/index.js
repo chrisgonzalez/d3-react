@@ -12,6 +12,10 @@ class BGLSummary extends Component {
 
         const deviation = d3.deviation(this.props.data, (d) => (d.value));
 
+        const highs = this.props.data.filter((d) => (d.value > 180));
+
+        const lows = this.props.data.filter((d) => (d.value < 65));
+
         /**
          * d3 scales accept an input domain (consider this like calibration values), and output valus in a specified range
          * this can be numeric, color interpolation, or categories!
@@ -29,6 +33,8 @@ class BGLSummary extends Component {
                 <h5>Values range from {valueExtent[0]} to {valueExtent[1]}.</h5>
                 <h5>The median value is {median}.</h5>
                 <h5>The standard deviation is {deviation}.</h5>
+                <h5>In this data set, there are {lows.length} low glucose readings, about {Math.round(100 * lows.length / this.props.data.length)}% of all readings</h5>
+                <h5>In this data set, there are {highs.length} high glucose readings, about {Math.round(100 * highs.length / this.props.data.length)}% of all readings</h5>
 
                 <h5 style={{color: colorScale(randomReading.value), fontWeight: 'bold'}}>If we make a cool color scale, a glucose reading of {randomReading.value} would be this color.</h5>
             </div>
