@@ -18,10 +18,13 @@ class DataViz extends Component {
     }
 
     render() {
-        console.log('data', this.props.data);
+        const children = Array.isArray(this.props.children) &&
+                         this.props.children.map((child) => (React.cloneElement(child, {data: this.props.data}))) ||
+                         React.cloneElement(this.props.children, {data: this.props.data});
+
         return (
             <div className="data-viz">
-                {React.cloneElement(this.props.children, {data: this.props.data})}
+                {children}
             </div>
         )
     }

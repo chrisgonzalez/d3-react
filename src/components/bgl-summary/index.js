@@ -28,7 +28,7 @@ class BGLSummary extends Component {
 
         return (
             <div className="bgl-summary">
-                <h2>Data Summary</h2>
+                <h2>1. Data Summary</h2>
                 <h5>The records begin on {timeExtent[0]}, and continue through {timeExtent[1]}.</h5>
                 <h5>Values range from {valueExtent[0]} to {valueExtent[1]}.</h5>
                 <h5>The median value is {median}.</h5>
