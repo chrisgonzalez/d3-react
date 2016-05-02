@@ -7,8 +7,8 @@ A simple presentation slide system build in ReactJS. This is not intended to be 
 
 With Docker
 ```
-docker build -t react-slides .
-docker run -d -p 3000:3000 -v $(pwd)/src:/app/src react-slides
+docker build -t d3-react .
+docker run -d -p 3000:3000 -v $(pwd)/src:/app/src d3-react
 open http://localhost:3000
 ```
 
