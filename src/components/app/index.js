@@ -10,10 +10,9 @@ class App extends Component {
     render() {
         return (
             <div>
-                <DataViz source='/src/data/blood-glucose.json'>
-                    <BGLSummary {...this.props} />
+                {/*<DataViz source='/src/data/blood-glucose.json'>
                     <BGLVisualization {...this.props} />
-                </DataViz>
+                </DataViz>*/}
 
                 <DataViz source='/src/data/us.states.json'>
                     <Map />

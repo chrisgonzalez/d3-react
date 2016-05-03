@@ -24,8 +24,6 @@ class BGLSummary extends Component {
 
         const randomReading = this.props.data[Math.floor(this.props.data.length * Math.random())] || {};
 
-        console.log(randomReading);
-
         return (
             <div className="bgl-summary">
                 <h2>1. Data Summary</h2>
@@ -35,7 +33,6 @@ class BGLSummary extends Component {
                 <h5>The standard deviation is {deviation}.</h5>
                 <h5>In this data set, there are {lows.length} low glucose readings, about {Math.round(100 * lows.length / this.props.data.length)}% of all readings</h5>
                 <h5>In this data set, there are {highs.length} high glucose readings, about {Math.round(100 * highs.length / this.props.data.length)}% of all readings</h5>
-
                 <h5 style={{color: colorScale(randomReading.value), fontWeight: 'bold'}}>If we make a cool color scale, a glucose reading of {randomReading.value} would be this color.</h5>
             </div>
         );
